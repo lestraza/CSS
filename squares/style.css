@@ -1,0 +1,19 @@
+body {
+    margin: 50px auto;
+    width: 700px;
+}
+div {
+    width: 150px;
+    height: 150px;
+    outline: 1px solid grey;
+    border: 2px solid white;
+}
+.black {
+    background-color: black;
+}
+.white {
+    background-color: white;
+    position: absolute;
+    top: 125px;
+    left: 690px;
+}

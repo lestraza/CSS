@@ -1,0 +1,50 @@
+body {
+    margin: 50px auto;
+    width: 700px;
+}
+div {
+    width: 600px;
+    height: 380px;
+    background-image: url(../images/car.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    box-shadow: 0 0 15px 5px;
+}
+input {
+    display: none;
+}
+input:checked + label {
+    background-color: red;
+    box-shadow: 0 0 2px 3px rgba(240, 235, 235, 0.8);
+    
+}
+
+label {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: 16px;
+    left: 25%;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: black;
+    cursor: pointer;
+}
+
+
+div label:nth-child(2) {
+    left: 35%;
+}
+div label:nth-child(4) {
+    left: 40%;
+}
+div label:nth-child(6) {
+    left: 45%;
+}
+div label:nth-child(8) {
+    left: 50%;
+}
+div label:nth-child(10) {
+    left: 55%;
+}

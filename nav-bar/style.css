@@ -1,0 +1,25 @@
+.wrapper {
+    width: 1200px;
+}
+.nav-tab {
+    border: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: green green transparent green;
+    height: 30px;
+    outline: none;
+    position: relative;
+}
+.nav-tab.active {
+    bottom: -1px;
+    height: 31px;
+    background-color: #fff;
+}
+.nav-tab.active span {    
+    position: relative;
+    bottom: 1px;
+}
+.content {    
+    padding: 20px;
+    border: 1px solid green;
+}

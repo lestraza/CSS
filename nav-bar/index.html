@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="nav-bar-container">
+                <button class="nav-tab active"><span>About</span></button>
+                <button class="nav-tab"><span>Menu</span></button>
+                <button class="nav-tab"><span>Bar</span></button>
+                <button class="nav-tab"><span>Contacts</span></button>
+            </div>
+            <div class="content">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex
+                corporis eum sunt! Iste, officia porro rem voluptatem quas culpa
+                quo, dolorem dolores, iusto praesentium aspernatur cupiditate
+                eius. Id, voluptates voluptas.
+            </div>
+        </div>
+
+        <script>
+            const buttons = document.querySelectorAll('button')
+
+            buttons.forEach(button => {
+                button.addEventListener('click', () => {
+                    buttons.forEach(btn => {
+                        btn.classList.remove('active')
+                    })
+                    button.classList.add('active')
+                })
+            })
+        </script>
+    </body>
+</html>
